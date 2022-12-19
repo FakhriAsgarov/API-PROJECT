@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+width: 100%;
+
+
+background-color: #F5F5F6;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    width: 100px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+ul{
+ padding:0;
+   
+}
+li{
+    display: inline-block;
+    margin-right: 48px;
+    color: #959BA4;
+    font-size: 13px;
+}
+
+li:hover{
+color: black;
+cursor: pointer;
+}
+header div{
+margin: auto;
+}
+
+.enter button{
+    padding: 10px;
+    border: none;
+    background-color : white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.main-container{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.main-container h1{
+    font-size: 50px;
+}
+.converter{
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+td{
+    border: 1px solid gray;
+    padding: 10px;
+    color: gray;
+}
+
+.left-currency{
+    width: 40%;
+  
+}
+.right-currency{
+    width: 40%;
+    
+}
+input{
+ width: 80%;
+    font-size: 50px;
+    padding: 10%;
+    padding-bottom: 40px;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input:focus{
+ outline: none;   
+}
+
+.left-table::before{
+    content: 'From:';
+    color: gray;
+    line-height: 2;
+    
+    
+}
+
+.right-table::before{
+    content: 'To:';
+    color: gray;
+    line-height: 2;
+   
+}
+
+.active{
+    background-color: blueviolet;
+    color: white;
+}
+
+span{
+    position: relative;
+    top: -30px;
+    left: 34px;
+    font-size: 12px;
+    color: gray;
+}
+td{
+    background-image: none;
+}
+td:not(.active):hover{
+    background-image: linear-gradient(black,blue);
+    color: white;
+   
+}
